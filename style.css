@@ -190,7 +190,7 @@ iframe {
     padding: 15px;
     /*margin: 5px;*/
     height:155px;
-    background-image: url(colinha.jpeg) ;
+    background-image: url(/image/colinha.jpeg) ;
     background-position:center;
     background-size:cover;
     width:350px;  

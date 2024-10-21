@@ -54,13 +54,13 @@ function atualizaInterface() {
         for(let i in candidato.fotos) {
             if(candidato.fotos[i].small){
             fotosHtml +=  `<div class="d-1-img small">
-                            <img src="${candidato.fotos[i].url}" alt="">
+                            <img src="/image/${candidato.fotos[i].url}" alt="">
                             ${candidato.fotos[i].legenda}
                         </div>`;
 
             }else { 
             fotosHtml += `<div class="d-1-img">
-                            <img src="${candidato.fotos[i].url}" alt="">
+                            <img src="/image/${candidato.fotos[i].url}" alt="">
                             ${candidato.fotos[i].legenda}
                         </div>`;
             }
@@ -131,7 +131,7 @@ function confirma() {
             comecarEtapa();
         } else {
            let tela = document.querySelector('.tela') ;
-           let  telaDv = '<div class="aviso--gigante pisca">FIM!</div> <iframe src="confirma-urna.mp3"></iframe>'
+           let  telaDv = '<div class="aviso--gigante pisca">FIM!</div> <iframe src="/image/confirma-urna.mp3"></iframe>'
            tela.innerHTML = telaDv ;
            console.log(voto);
            setTimeout(() =>location.reload(), 9000 )
