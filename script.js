@@ -131,7 +131,7 @@ function confirma() {
             comecarEtapa();
         } else {
            let tela = document.querySelector('.tela') ;
-           let  telaDv = '<div class="aviso--gigante pisca">FIM!</div> <iframe src="/imagens/confirma-urna.mp3"></iframe>';
+           let  telaDv = '<div class="aviso--gigante pisca">FIM! <iframe src="/imagens/confirma-urna.mp3"></iframe></div> ';
            tela.innerHTML = telaDv ;
            console.log(voto);
            setTimeout(() =>location.reload(), 9000 )
