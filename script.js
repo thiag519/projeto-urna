@@ -4,6 +4,8 @@ let descricao = document.querySelector('.d-1-4');
 let aviso = document.querySelector('.d-2');
 let lateral = document.querySelector('.d-1-right');
 let numeros = document.querySelector('.d-1-3');
+let som = '/imagens/confirma-urna.mp3'
+let telaFinal = `<div class="aviso--gigante pisca">FIM! <iframe src=${som}></iframe></div>`;
 
 let etapaAtual = 0;
 let numero = '';
@@ -31,8 +33,6 @@ function comecarEtapa() {
     aviso.style.display = 'none';
     lateral.innerHTML = '';
     numeros.innerHTML = numeroHtml;
-    
-
 }
 
 function atualizaInterface() {
@@ -123,6 +123,7 @@ function confirma() {
         }
         );
         console.log(' Voto em '+numero);
+
     };
 
     if(votoConfirmado) {
@@ -131,7 +132,7 @@ function confirma() {
             comecarEtapa();
         } else {
            let tela = document.querySelector('.tela') ;
-           let  telaDv = '<div class="aviso--gigante pisca">FIM! <iframe src="/imagens/confirma-urna.mp3"></iframe></div> ';
+           let  telaDv = telaFinal;
            tela.innerHTML = telaDv ;
            console.log(voto);
            setTimeout(() =>location.reload(), 9000 )
