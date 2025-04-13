@@ -4,7 +4,7 @@ let descricao = document.querySelector('.d-1-4');
 let aviso = document.querySelector('.d-2');
 let lateral = document.querySelector('.d-1-right');
 let numeros = document.querySelector('.d-1-3');
-let som = '/imagens/confirma-urna.mp3'
+let som = 'confirma-urna.mp3'
 let telaFinal = `<div class="aviso--gigante pisca">FIM! <iframe src=${som}></iframe></div>`;
 
 let etapaAtual = 0;
@@ -54,13 +54,13 @@ function atualizaInterface() {
         for(let i in candidato.fotos) {
             if(candidato.fotos[i].small){
             fotosHtml +=  `<div class="d-1-img small">
-                            <img src="/imagens/${candidato.fotos[i].url}" alt="">
+                            <img src="${candidato.fotos[i].url}" alt="">
                             ${candidato.fotos[i].legenda}
                         </div>`;
 
             }else { 
             fotosHtml += `<div class="d-1-img">
-                            <img src="/imagens/${candidato.fotos[i].url}" alt="">
+                            <img src="${candidato.fotos[i].url}" alt="">
                             ${candidato.fotos[i].legenda}
                         </div>`;
             }
