@@ -1,6 +1,16 @@
   # Projeto do curso B7web
-link: https://thiag519.github.io/projeto-urna/
-##
+
+  *[Visualizi o site](https://thiag519.github.io/projeto-urna/)*
+
+<h3>
+  Este projeto simula uma urna eletrônica, permitindo que o usuário vote em candidatos
+  fictícios e visualize o resultado da votação. também conta com um botão de colinha
+  para auxiliar o usuário na escolha do candidato, desenvolvido com HTML, CSS e JavaScript.   
+</h3>
+
+---
+
+
 Agumas alterações do projeto original feito no curso 
 + adicionei um botão colinha para exibir os candidatos.
 + também coloquei um som de confirmação de voto comcluido.
@@ -16,6 +26,6 @@ Agumas alterações do projeto original feito no curso
   <img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
 </div>
 
-
+---
 
  
